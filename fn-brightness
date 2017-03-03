@@ -1,0 +1,3 @@
+# intalling lxinput fixed brightness hotkey shit
+# just hitting the F11 key decreased the screen backlight
+$ yaourt lxinput
