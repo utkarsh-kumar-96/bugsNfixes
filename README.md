@@ -2,7 +2,7 @@
  
  these fixes will work on all arch based linux distro
 
-# $ screenfetch
+ $ screenfetch
 # ██████████████████  ████████     udit@udit-pc
 # ██████████████████  ████████     OS: Manjaro 16.10 Fringilla
 # ██████████████████  ████████     Kernel: x86_64 Linux 4.4.52-1-MANJARO
