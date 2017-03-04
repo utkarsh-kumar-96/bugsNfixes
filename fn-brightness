@@ -1,3 +1,5 @@
 # just hitting the F11 key decreased the screen backlight
 # installing lxinput fixed the issue
 $ yaourt lxinput
+# ffs problem occured again
+# still fixing problem
