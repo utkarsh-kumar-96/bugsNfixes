@@ -1,1 +1,5 @@
-# step i've done to fix the issue
+# pcie error on intel i3 skylake 4 cores
+# add pci=noaer to kernel paramaters
+$ sudo nano /etc/default/grub
+GRUB_CMDLINE_lINUX_DEFAULT="quiet .... pci=noaer"
+$ sudo update grub
