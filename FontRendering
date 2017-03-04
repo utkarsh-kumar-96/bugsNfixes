@@ -1,3 +1,7 @@
+# install System San Francisco font
+
+$ yaourt system-san-francisco-font-git
+
 # better font rendering
 # Create the file /etc/fonts/local.conf
 # sudo nano /etc/fonts/local.conf
