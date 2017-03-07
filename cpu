@@ -1,0 +1,15 @@
+Minimizing Laptop/Desktop temperatures
+
+For Intel Machines
+
+The Intel pstate driver automatically handles CPU frequency scaling according to system load.
+Note that the Intel Pstate works only with kernels >= 3.9, and kernel 3.11+ is recommended.
+Primary supported processor families are Intel Sandy Bridge (also known as 2nd generation of i3/5/7 processors) and up.
+The Intel Thermal Daemon (thermald) can be installed to automatically manage the CPU temperature.
+To install it, following command can be used:
+
+$ sudo pacman -S thermald
+
+After installing it needs to be configured to automatically start at boot in order to work:
+
+$ sudo systemctl enable thermald
