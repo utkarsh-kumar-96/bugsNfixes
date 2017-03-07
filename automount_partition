@@ -1,0 +1,20 @@
+# mount NTFS & FAT partiion
+# if the partition is ntfs download ntfs-3g package
+
+# for arch users
+$ sudo pacman -S ntfs-3g
+
+
+get uuid & userid and groupid(usually 1000)
+
+user id
+$ id -u
+
+group id
+$ id -g
+
+create a folder in /media/disk1
+$ sudo mkdir -p /media/disk1
+
+# <file system>  <mount point>  <type>  <options>  <dump> <pass>
+UUID=<uuid>  /media/disk1  vfat or ntfs-3g users,defaults,umask=000 0 0
