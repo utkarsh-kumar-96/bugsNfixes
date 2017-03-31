@@ -1,0 +1,72 @@
+# 31/03/2017
+# Suddenly wifi stops working
+
+$ dmesg
+[   13.075254] ath10k_pci 0000:01:00.0 wlp1s0: renamed from wlan0
+[   20.141055] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[   96.271574] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[   96.393041] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[  356.037576] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[  671.096038] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[  991.066852] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 1306.048181] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 1621.039794] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 1772.297364] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+
+
+
+# run following command
+# for me device name is w1p1s0
+$ ifconfig -a
+$ sudo ifconfig DEVICE_NAME up
+
+
+$ dmesg
+[   13.075254] ath10k_pci 0000:01:00.0 wlp1s0: renamed from wlan0
+[   20.141055] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[   96.271574] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[   96.393041] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[  356.037576] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[  671.096038] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[  991.066852] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 1306.048181] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 1621.039794] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 1772.297364] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 1790.210111] wlp1s0: authenticate with 0c:d2:b5:34:f3:98
+[ 1790.246884] wlp1s0: send auth to 0c:d2:b5:34:f3:98 (try 1/3)
+[ 1790.248688] wlp1s0: authenticated
+[ 1790.250899] wlp1s0: associate with 0c:d2:b5:34:f3:98 (try 1/3)
+[ 1790.254751] wlp1s0: RX AssocResp from 0c:d2:b5:34:f3:98 (capab=0x411 status=0 aid=2)
+[ 1790.259798] wlp1s0: associated
+[ 1790.259948] IPv6: ADDRCONF(NETDEV_CHANGE): wlp1s0: link becomes ready
+[ 1796.527384] wlp1s0: deauthenticated from 0c:d2:b5:34:f3:98 (Reason: 15=4WAY_HANDSHAKE_TIMEOUT)
+[ 1805.325313] wlp1s0: authenticate with 0c:d2:b5:34:f3:98
+[ 1805.361676] wlp1s0: send auth to 0c:d2:b5:34:f3:98 (try 1/3)
+[ 1805.363925] wlp1s0: authenticated
+[ 1805.367504] wlp1s0: associate with 0c:d2:b5:34:f3:98 (try 1/3)
+[ 1805.371394] wlp1s0: RX AssocResp from 0c:d2:b5:34:f3:98 (capab=0x411 status=0 aid=2)
+[ 1805.375805] wlp1s0: associated
+[ 1811.777706] wlp1s0: deauthenticated from 0c:d2:b5:34:f3:98 (Reason: 15=4WAY_HANDSHAKE_TIMEOUT)
+[ 1815.014754] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 1815.017397] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 2156.048929] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 2471.102938] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 2786.056965] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 3101.116534] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 3416.061759] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 3731.122325] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 3847.112781] IPv6: ADDRCONF(NETDEV_UP): wlp1s0: link is not ready
+[ 3856.427804] wlp1s0: authenticate with 0c:d2:b5:34:f3:98
+[ 3856.463443] wlp1s0: send auth to 0c:d2:b5:34:f3:98 (try 1/3)
+[ 3856.465267] wlp1s0: authenticated
+[ 3856.468300] wlp1s0: associate with 0c:d2:b5:34:f3:98 (try 1/3)
+[ 3856.472116] wlp1s0: RX AssocResp from 0c:d2:b5:34:f3:98 (capab=0x411 status=0 aid=1)
+[ 3856.474271] wlp1s0: associated
+[ 3856.474404] IPv6: ADDRCONF(NETDEV_CHANGE): wlp1s0: link becomes ready
+[ 3862.824680] wlp1s0: deauthenticated from 0c:d2:b5:34:f3:98 (Reason: 15=4WAY_HANDSHAKE_TIMEOUT)
+[ 3888.739078] wlp1s0: authenticate with 0c:d2:b5:34:f3:98
+[ 3888.774958] wlp1s0: send auth to 0c:d2:b5:34:f3:98 (try 1/3)
+[ 3888.776520] wlp1s0: authenticated
+[ 3888.778757] wlp1s0: associate with 0c:d2:b5:34:f3:98 (try 1/3)
+[ 3888.782622] wlp1s0: RX AssocResp from 0c:d2:b5:34:f3:98 (capab=0x411 status=0 aid=1)
+[ 3888.786160] wlp1s0: associated
