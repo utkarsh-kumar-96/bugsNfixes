@@ -1,7 +1,7 @@
 # this fix is only for libinput xorg input driver
 $ xinput
 
-# you will somewhat like this
+# you will see somewhat like this
 
 
 [udit@udit-pc ~]$ xinput
