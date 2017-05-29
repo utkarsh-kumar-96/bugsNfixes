@@ -1,7 +1,5 @@
-# this fix is only for libinput xorg input driver
 $ xinput
 
-# you will see somewhat like this
 
 
 [udit@udit-pc ~]$ xinput
@@ -21,8 +19,6 @@ $ xinput
     ↳ Dell WMI hotkeys                        	id=15	[slave  keyboard (3)]
 
 
-# so my touchpad device is SynPS/2 blah blah and id is 4 
-# now run
 $ xinput list-props 14
 Device 'SynPS/2 Synaptics TouchPad':
 	Device Enabled (139):	1
@@ -59,8 +55,7 @@ Device 'SynPS/2 Synaptics TouchPad':
 	libinput Drag Lock Buttons (299):	<no items>
 	libinput Horizontal Scroll Enabled (300):	1
 
-# oops "libinput Tapping Enabled (275):	0" looks like tapping is disabled by default
-# now follow the steps
+# "libinput Tapping Enabled (275):	0" (tapping is disabled by default
 $ sudo nano /etc/X11/xorg.conf.d/30-touchpad.conf 
     Section "InputClass"
       Identifier "SynPS/2 Synaptics TouchPad"
