@@ -1,11 +1,5 @@
-# install System San Francisco font
-
 $ yaourt system-san-francisco-font-git
-
-# better font rendering
-# Create the file /etc/fonts/local.conf
-# sudo nano /etc/fonts/local.conf
-# Paste the following content in the file
+$ sudo nano /etc/fonts/local.conf
 
 
 <match target="font">
@@ -27,14 +21,8 @@ $ yaourt system-san-francisco-font-git
 # Create backup of ~/.Xresources file:
 
 $ cp ~/.Xresources ~/.Xresources.bak
-
-# If the .Xresources file has not been already created and you get the error -
-# "cp: cannot stat ‘~/.Xresources’: No such file or directory", then skip to step No. 3.
-# Open/Create ~/.Xresources file in text editor:
-
 $ nano ~/.Xresources
 
-# Delete current content (if any) and paste in it:
 
 Xft.dpi: 96
 Xft.antialias: true
@@ -44,8 +32,5 @@ Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-# ignore if already present
-# Save changes in the file.
 
-# Run the following command in terminal:
 $ xrdb -merge ~/.Xresources
