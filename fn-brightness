@@ -1,4 +1,0 @@
-# cant set backlight steps and change shortcut
-# no fixes worked for me
-# added this to startup
-$ xbacklight -set 4
